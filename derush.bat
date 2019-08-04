@@ -1,15 +1,16 @@
 REM Script permettant la copie et le renommage des fichiers facilement.
-REM Nécessite le logiciel "Advanced Renamer" et le script de renommage SSP_renamer.aren
+REM Necessite le logiciel "Advanced Renamer" et le script de renommage SSP_renamer.aren
 
 SET origine=%1
 SET destination=%2
 SET extentions=%3
 
 IF EXIST %destination% GOTO :oef
+MKDIR %destination%
 
-FOR /R %origine% %%f in (%extention%) do (
+FOR /R %origine% %%f in (%extentions%) do (
   ECHO Copie de %%f
-  MOVE %%f %destination%
+  ROBOCOPY %%f %destination% * /S
 )
 
 REM Renommage des fichiers selon le nom du dossier parent
