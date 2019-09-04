@@ -8,7 +8,7 @@ SET extentions=%3
 IF EXIST %destination% GOTO :oef
 MKDIR %destination%
 
-FOR /R %origine% %%f in (%extentions%) do (
+FOR /R %origine% %%f IN (%extentions%) DO (
   ECHO Copie de %%f
   ROBOCOPY %%f %destination% * /S
 )
