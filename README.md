@@ -1,7 +1,7 @@
 # SSP_derush
-Automatisation du derush de fichiers vidéos et audio, adaptés pour projets audiovisuels de l'association [Sous-Sol Productions](http://www.assos.utc.fr/ssp)
+Automatisation du derush de fichiers vidéos et audio, adaptés pour projets audiovisuels de l'association [Sous-Sol Productions](https://assos.utc.fr/ssp/)
 
-## Parameters
+## Paramètres
 Le script doit être appelé avec les trois éléments suivants :
  * origine : lien vers la racine du **dossier/dispotif** où se trouvent les fichiers à copier,
  * destination : lien vers le **dossier** de destination où seront copiés les fichiers. **Ce dossier ne doit pas exister**,
