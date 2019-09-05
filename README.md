@@ -1,4 +1,4 @@
-# SSP_derush
+# Script de derush
 Automatisation du derush de fichiers vidéos et audio, adaptés pour projets audiovisuels de l'association [Sous-Sol Productions](https://assos.utc.fr/ssp/)
 
 ## Paramètres

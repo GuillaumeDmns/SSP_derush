@@ -19,6 +19,7 @@ FOR /R %origine% %%f IN (%extentions%) DO (
 REM Renommage des fichiers selon le nom du dossier parent
 REM Utilisation du logiciel Advanced Renamer
 
+SET PATH=%PATH%;C:\Program Files (x86)\Advanced Renamer
 arenc -e "SSP_renamer.aren" -p %destination%
 
 PAUSE
