@@ -7,7 +7,9 @@ SET origine=%1
 SET destination=%2
 SET extentionsBrutes=%3
 SET extentions=%extentionsBrutes:~1,-1%
+SET destinationExistante= Un dossier de destination avec ce nom existe déjà !
 
+IF EXIST %destination% ECHO %destinationExistante%
 IF EXIST %destination% GOTO :eof
 MKDIR %destination%
 
